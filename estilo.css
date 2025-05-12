@@ -1,95 +1,99 @@
 @import url('https://fonts.googleapis.com/css2?family=Karla:ital,wght@0,200..800;1,200..800&display=swap');
-*{
+
+* {
    margin: 0;
    padding: 0;
    box-sizing: border-box;
 }
 
-body{
-    font-family:  "Karla", sans-serif;
+body {
+    font-family: "Karla", sans-serif;
     background-color: #a79f9f;
     margin: 5%;
     line-height: 1.6;
 }
 
-main{
+main {
     max-width: 800px;
     margin: auto;
     padding: 20px;
     box-shadow: 0 0 10px rgb(213, 13, 199);
+    background-color: white;
 }
 
-header{
+header {
     text-align: center;
-    color:rgb(88, 195, 227);
+    color: rgb(88, 195, 227);
     padding: 20px 0;
     border-radius: 8px 8px 0 0;
     background-image: url('https://serverlinuxbucket.s3.us-east-1.amazonaws.com/fondo.jpg');
     background-repeat: no-repeat;
-    background-size: 100%;
+    background-size: cover;
     background-position: center;
 }
 
-header figure img{
+header figure img {
     border-radius: 50%;
     border: 5px solid #216cae;
     box-shadow: 0 0 10px;
 }
 
-header h1{
+header h1 {
     font-size: 2em;
     margin-top: 10px;
 }
-header h2{
-    font-family:1.2em ;
+
+header h2 {
+    font-size: 1.2em;
     opacity: 0.7;
 }
 
-.container{
-  background-color: rgb(29, 29, 37);
-  width: 80%;
-  margin: 0 auto;
-  position: relative;
-  z-index: 1;
+.container {
+    width: 100%;
+    margin: 0 auto;
+    position: relative;
+    z-index: 1;
 }
 
+.cabecera {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
 
-.contenedor_foto_perfil{
-    width: 280px;
-    height: 280px;
+.contenedor_foto_perfil {
+    width: 200px;
+    height: 200px;
     border-radius: 50%;
     overflow: hidden;
-    display: inline-block;
-    vertical-align: middle;
+    display: block;
     border: 7px solid #0ebaba;
-    margin: 5%;
+    margin: 10px;
     box-shadow: 0 0 20px rgba(0,0,0,0.5);
 }
 
-.contenedor_foto_perfil img{
+.contenedor_foto_perfil img {
     width: 100%;
     height: auto;
     display: block;
 }
 
-.cabecera{
-    position: relative;
-}
-
-.nombre_puesto{
-    display: inline-block;
-    vertical-align: middle;
+.nombre_puesto {
+    display: block;
     margin-left: 1%;
     text-shadow: 0 0 20px rgba(0,0,0,0.5);
 }
 
-h3{
+h3 {
     font-size: 1.4em;
     margin-top: 20px;
-    color:rgba(14,16,26,0.1);
+    color: #1a1a1a;
 }
 
-section{
+section {
     background-color: white;
     padding: 15px;
     border-radius: 8px;
@@ -97,27 +101,28 @@ section{
     box-shadow: 0 0 5px rgba(0,0,0,0.1);
 }
 
-section hr{
+section hr {
     border: 0;
     height: 2px;
     background: #0ebaba;
     margin: 10px;
 }
 
-ul{
+ul {
     list-style: none;
+    margin: 10px 0;
 }
 
-ul li{
+ul li {
     padding: 5px 0;
 }
 
-i{
+i {
     color: #0ebaba;
     margin-right: 8px;
 }
 
-address p{
+address p {
     margin: 5px 0;
 }
 
@@ -126,6 +131,48 @@ address a {
     text-decoration: none;
 }
 
-article{
+article {
     margin-bottom: 15px;
+}
+
+/* ✅ Media query para celulares */
+@media (max-width: 600px) {
+    body {
+        margin: 10px;
+    }
+
+    .cabecera {
+        flex-direction: column;
+    }
+
+    .contenedor_foto_perfil {
+        width: 150px;
+        height: 150px;
+        margin: 10px auto;
+    }
+
+    .nombre_puesto {
+        margin: 10px 0 0 0;
+        text-align: center;
+    }
+
+    main {
+        padding: 10px;
+    }
+
+    h1 {
+        font-size: 1.5em;
+    }
+
+    h2 {
+        font-size: 1em;
+    }
+
+    h3 {
+        font-size: 1.2em;
+    }
+
+    section {
+        padding: 10px;
+    }
 }
