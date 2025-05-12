@@ -7,7 +7,7 @@
 
 body{
     font-family:  "Karla", sans-serif;
-    background-color: #faeeee;
+    background-color: #a79f9f;
     margin: 5%;
     line-height: 1.6;
 }
@@ -24,7 +24,7 @@ header{
     color:rgb(88, 195, 227);
     padding: 20px 0;
     border-radius: 8px 8px 0 0;
-    background-image: url('./img/fondo.avif');
+    background-image: url('https://serverlinuxbucket.s3.us-east-1.amazonaws.com/fondo.jpg');
     background-repeat: no-repeat;
     background-size: 100%;
     background-position: center;
@@ -46,7 +46,7 @@ header h2{
 }
 
 .container{
-  background-color: blue;
+  background-color: rgb(29, 29, 37);
   width: 80%;
   margin: 0 auto;
   position: relative;
